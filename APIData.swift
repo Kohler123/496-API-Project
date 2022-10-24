@@ -31,9 +31,8 @@ class APIData: ObservableObject{
 
     }
     func fetchAPIData(completionHandler: @escaping (Movie) -> Void) {
-        let url = URL(string: "https://www.omdbapi.com/?apikey=a324cc08&s=Fast&type=movie")!
-        movies.removeAll()
-        
+        let url = URL(string: "https://www.omdbapi.com/?apikey=a324cc08&s=Fast&type=movie")! 
+        //(\query)
         var task = URLSession.shared.dataTask(with: url){(data, response, error) in
             
             guard let data = data else{return}
