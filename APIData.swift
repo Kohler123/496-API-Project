@@ -3,14 +3,13 @@
 //  FetchAPI
 //
 
-import UIKit
+import Foundation
 
 class APIData: ObservableObject{
     var title: String = ""
     var year: String = ""
     var imdbID: String = ""
     var poster: String = ""
-    var movies = [Movie]()
     
     init(Title: String){
 
